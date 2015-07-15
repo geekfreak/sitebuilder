@@ -1,0 +1,79 @@
+@import '_vars'
+@import '_mixins'
+/*
+  Twenty by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+  header
+    &.major
+      padding-bottom: 0.25em
+
+    &.special
+      margin-bottom: 4em
+      padding-top: 5em
+      &:before,
+      &:after
+        width: 40%
+
+      h2 + p
+        padding-top: 1.25em
+
+  section
+    margin: 1em 0 1em 0
+    &:first-child
+      margin-top: 0
+
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  .button
+    &.small
+      font-size: 0.8em
+      min-width: 18em
+      padding: 0.75em 0
+
+  ul
+    &.featured-icons
+      margin: 0
+      li
+        display: inline-block
+        float: none
+        width: auto
+        .icon
+          font-size: 4em
+          width: 1.25em
+
+    &.buttons
+      li
+        display: block
+        padding: 1em 0 0 0
+
+  #header
+    display: none
+
+  #banner
+    margin: 0
+
+  .wrapper
+    &.special-alt
+      text-align: center
+
+    &.style4
+      padding-bottom: 3em
+
+  #main
+    padding: 5em 0
+    .sidebar
+      border-top: solid 1px transparentify($color-fg, 0.9)
+      padding-top: 3em
+      section
+        border-top: 0
+        padding-top: 0
+
+  #cta
+    margin: 0
+
+.service-title
+  padding-top: 1em;

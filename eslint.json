@@ -1,0 +1,24 @@
+{
+  "env": {
+    "node": true
+  },
+
+  "globals": {
+    "window": true,
+    "document": true,
+    "ga": true,
+    "console": true,
+    "jQuery": true,
+    "debug": true,
+    "$": true
+  },
+
+  "rules": {
+    "no-console": 0,
+    "dot-notation": 0,
+    "strict": 2,
+    "no-extra-strict": 2,
+    "quotes": [ 2, "double" ],
+    "no-unused-expressions": 0
+  }
+}

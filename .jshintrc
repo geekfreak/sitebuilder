@@ -1,0 +1,10 @@
+{
+  "undef": true,
+  "unused": true,
+  "laxcomma": true,
+  "browser":true,
+  "jquery":true,
+  "node": true,
+  "predef": [ "window" ],
+  "indent": 2
+}
