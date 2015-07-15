@@ -1,6 +1,7 @@
 "use strict";
 
 const DEBUG     = true;
+const LOG       = console.log;
 const WORKSHEET = 1;
 const GS        = require( "google-spreadsheet" );
 const FS        = require( "fs" );
@@ -13,9 +14,9 @@ let base         = "src"
 ,   documentId   = "0AnRyC36d2KeKdE12Q3ZkdkhkWTZ0MDFBcEtSNEEyUFE"
 ,   spreadsheet  = new GS( documentId );
 
-DEBUG && console.log( "process.versions.node" , process.versions.node );
-DEBUG && console.log( "process.versions.v8"   , process.versions.v8 );
-DEBUG && console.log( "process.argv"          , process.argv );
+DEBUG && LOG( "process.versions.node" , process.versions.node );
+DEBUG && LOG( "process.versions.v8"   , process.versions.v8 );
+DEBUG && LOG( "process.argv"          , process.argv );
 
 function parser( rows ) {
 
@@ -50,7 +51,7 @@ function parser( rows ) {
       }
       FS.writeFile( indexFile, copydata, function( err ) { console.log( err ? err : [ indexFile, " saved!" ].join( "" ) ); });
     });
-    DEBUG && console.log("unused:\n",unusedKeys);
+    DEBUG && LOG("unused:\n",unusedKeys);
   }
    FS.readFile(  [templates, "/index.template"].join("/"), "utf8", function( err, template ) { err ? console.error( err ) :  processTemplate( template ); } );
 }
